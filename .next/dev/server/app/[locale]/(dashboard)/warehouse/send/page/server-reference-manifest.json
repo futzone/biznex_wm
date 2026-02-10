@@ -1,0 +1,65 @@
+{
+  "node": {
+    "005e4ddb3dd2bdb7c66e01527f36923bcdac13075a": {
+      "workers": {
+        "app/[locale]/(dashboard)/warehouse/send/page": {
+          "moduleId": "[project]/.next-internal/server/app/[locale]/(dashboard)/warehouse/send/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": true,
+          "exportedName": "getDealers",
+          "filename": "src/lib/actions.ts"
+        }
+      },
+      "layer": {
+        "app/[locale]/(dashboard)/warehouse/send/page": "action-browser"
+      },
+      "exportedName": "getDealers",
+      "filename": "src/lib/actions.ts"
+    },
+    "40b7147435cd2b0c7a166e488d247e299eb403cdf5": {
+      "workers": {
+        "app/[locale]/(dashboard)/warehouse/send/page": {
+          "moduleId": "[project]/.next-internal/server/app/[locale]/(dashboard)/warehouse/send/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": true,
+          "exportedName": "getStock",
+          "filename": "src/lib/actions.ts"
+        }
+      },
+      "layer": {
+        "app/[locale]/(dashboard)/warehouse/send/page": "action-browser"
+      },
+      "exportedName": "getStock",
+      "filename": "src/lib/actions.ts"
+    },
+    "40b1df31ca46dfd2d65ff67223b1e04f154bf947ef": {
+      "workers": {
+        "app/[locale]/(dashboard)/warehouse/send/page": {
+          "moduleId": "[project]/.next-internal/server/app/[locale]/(dashboard)/warehouse/send/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": true,
+          "exportedName": "getProducts",
+          "filename": "src/lib/actions.ts"
+        }
+      },
+      "layer": {
+        "app/[locale]/(dashboard)/warehouse/send/page": "action-browser"
+      },
+      "exportedName": "getProducts",
+      "filename": "src/lib/actions.ts"
+    },
+    "406e7bc40d12befbffde1a6ea182f5a60a0e4562b8": {
+      "workers": {
+        "app/[locale]/(dashboard)/warehouse/send/page": {
+          "moduleId": "[project]/.next-internal/server/app/[locale]/(dashboard)/warehouse/send/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": true,
+          "exportedName": "warehouseSend",
+          "filename": "src/lib/actions.ts"
+        }
+      },
+      "layer": {
+        "app/[locale]/(dashboard)/warehouse/send/page": "action-browser"
+      },
+      "exportedName": "warehouseSend",
+      "filename": "src/lib/actions.ts"
+    }
+  },
+  "edge": {}
+}

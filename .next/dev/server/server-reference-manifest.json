@@ -1,0 +1,214 @@
+{
+  "node": {
+    "005924e15a630f63e5a4e2a4213b5022b8e808dd65": {
+      "workers": {
+        "app/[locale]/(dashboard)/page": {
+          "moduleId": "[project]/.next-internal/server/app/[locale]/(dashboard)/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": true,
+          "exportedName": "getDashboardStats",
+          "filename": "src/lib/actions.ts"
+        },
+        "app/[locale]/(dashboard)/warehouse/page": {
+          "moduleId": "[project]/.next-internal/server/app/[locale]/(dashboard)/warehouse/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": true,
+          "exportedName": "getDashboardStats",
+          "filename": "src/lib/actions.ts"
+        }
+      },
+      "layer": {
+        "app/[locale]/(dashboard)/page": "action-browser",
+        "app/[locale]/(dashboard)/warehouse/page": "action-browser"
+      },
+      "filename": "src/lib/actions.ts",
+      "exportedName": "getDashboardStats"
+    },
+    "005e4ddb3dd2bdb7c66e01527f36923bcdac13075a": {
+      "workers": {
+        "app/[locale]/(dashboard)/movements/page": {
+          "moduleId": "[project]/.next-internal/server/app/[locale]/(dashboard)/movements/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": true,
+          "exportedName": "getDealers",
+          "filename": "src/lib/actions.ts"
+        },
+        "app/[locale]/(dashboard)/warehouse/returns/page": {
+          "moduleId": "[project]/.next-internal/server/app/[locale]/(dashboard)/warehouse/returns/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": true,
+          "exportedName": "getDealers",
+          "filename": "src/lib/actions.ts"
+        }
+      },
+      "layer": {
+        "app/[locale]/(dashboard)/movements/page": "action-browser",
+        "app/[locale]/(dashboard)/warehouse/returns/page": "action-browser"
+      },
+      "filename": "src/lib/actions.ts",
+      "exportedName": "getDealers"
+    },
+    "40b7147435cd2b0c7a166e488d247e299eb403cdf5": {
+      "workers": {
+        "app/[locale]/(dashboard)/warehouse/returns/page": {
+          "moduleId": "[project]/.next-internal/server/app/[locale]/(dashboard)/warehouse/returns/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": true,
+          "exportedName": "getStock",
+          "filename": "src/lib/actions.ts"
+        }
+      },
+      "layer": {
+        "app/[locale]/(dashboard)/warehouse/returns/page": "action-browser"
+      },
+      "filename": "src/lib/actions.ts",
+      "exportedName": "getStock"
+    },
+    "40b1df31ca46dfd2d65ff67223b1e04f154bf947ef": {
+      "workers": {
+        "app/[locale]/(dashboard)/products/page": {
+          "moduleId": "[project]/.next-internal/server/app/[locale]/(dashboard)/products/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": true,
+          "exportedName": "getProducts",
+          "filename": "src/lib/actions.ts"
+        },
+        "app/[locale]/(dashboard)/warehouse/receive/page": {
+          "moduleId": "[project]/.next-internal/server/app/[locale]/(dashboard)/warehouse/receive/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": true,
+          "exportedName": "getProducts",
+          "filename": "src/lib/actions.ts"
+        },
+        "app/[locale]/(dashboard)/warehouse/returns/page": {
+          "moduleId": "[project]/.next-internal/server/app/[locale]/(dashboard)/warehouse/returns/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": true,
+          "exportedName": "getProducts",
+          "filename": "src/lib/actions.ts"
+        }
+      },
+      "layer": {
+        "app/[locale]/(dashboard)/products/page": "action-browser",
+        "app/[locale]/(dashboard)/warehouse/receive/page": "action-browser",
+        "app/[locale]/(dashboard)/warehouse/returns/page": "action-browser"
+      },
+      "filename": "src/lib/actions.ts",
+      "exportedName": "getProducts"
+    },
+    "405351a78b1c925b2dedb170a1b38be4c33b689438": {
+      "workers": {
+        "app/[locale]/(dashboard)/warehouse/returns/page": {
+          "moduleId": "[project]/.next-internal/server/app/[locale]/(dashboard)/warehouse/returns/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": true,
+          "exportedName": "warehouseReturns",
+          "filename": "src/lib/actions.ts"
+        }
+      },
+      "layer": {
+        "app/[locale]/(dashboard)/warehouse/returns/page": "action-browser"
+      },
+      "filename": "src/lib/actions.ts",
+      "exportedName": "warehouseReturns"
+    },
+    "007d316d726c2caa5328ba6e3725077b1a231e7e24": {
+      "workers": {
+        "app/[locale]/(dashboard)/warehouse/receive/page": {
+          "moduleId": "[project]/.next-internal/server/app/[locale]/(dashboard)/warehouse/receive/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": true,
+          "exportedName": "getSuppliers",
+          "filename": "src/lib/actions.ts"
+        }
+      },
+      "layer": {
+        "app/[locale]/(dashboard)/warehouse/receive/page": "action-browser"
+      },
+      "filename": "src/lib/actions.ts",
+      "exportedName": "getSuppliers"
+    },
+    "40708d8952e5119d12b929546cca902cfa13ec9e6a": {
+      "workers": {
+        "app/[locale]/(dashboard)/warehouse/receive/page": {
+          "moduleId": "[project]/.next-internal/server/app/[locale]/(dashboard)/warehouse/receive/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": true,
+          "exportedName": "warehouseReceive",
+          "filename": "src/lib/actions.ts"
+        }
+      },
+      "layer": {
+        "app/[locale]/(dashboard)/warehouse/receive/page": "action-browser"
+      },
+      "filename": "src/lib/actions.ts",
+      "exportedName": "warehouseReceive"
+    },
+    "0092dd734cbeb1457ee18ea16f151f451ed7e44bf7": {
+      "workers": {
+        "app/[locale]/(dashboard)/products/page": {
+          "moduleId": "[project]/.next-internal/server/app/[locale]/(dashboard)/products/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": true,
+          "exportedName": "getProductCategories",
+          "filename": "src/lib/actions.ts"
+        }
+      },
+      "layer": {
+        "app/[locale]/(dashboard)/products/page": "action-browser"
+      },
+      "filename": "src/lib/actions.ts",
+      "exportedName": "getProductCategories"
+    },
+    "400da4eceb125861ed24c8870b4857bbad08efa11e": {
+      "workers": {
+        "app/[locale]/(dashboard)/products/page": {
+          "moduleId": "[project]/.next-internal/server/app/[locale]/(dashboard)/products/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": true,
+          "exportedName": "createProduct",
+          "filename": "src/lib/actions.ts"
+        }
+      },
+      "layer": {
+        "app/[locale]/(dashboard)/products/page": "action-browser"
+      },
+      "filename": "src/lib/actions.ts",
+      "exportedName": "createProduct"
+    },
+    "602056f3fc6bd0ef7cfaffb2fd42dc69c94d2afce2": {
+      "workers": {
+        "app/[locale]/(dashboard)/products/page": {
+          "moduleId": "[project]/.next-internal/server/app/[locale]/(dashboard)/products/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": true,
+          "exportedName": "updateProduct",
+          "filename": "src/lib/actions.ts"
+        }
+      },
+      "layer": {
+        "app/[locale]/(dashboard)/products/page": "action-browser"
+      },
+      "filename": "src/lib/actions.ts",
+      "exportedName": "updateProduct"
+    },
+    "40170c6e7f7c65bce3ec9dedecca4aaca7705597aa": {
+      "workers": {
+        "app/[locale]/(dashboard)/products/page": {
+          "moduleId": "[project]/.next-internal/server/app/[locale]/(dashboard)/products/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": true,
+          "exportedName": "deleteProduct",
+          "filename": "src/lib/actions.ts"
+        }
+      },
+      "layer": {
+        "app/[locale]/(dashboard)/products/page": "action-browser"
+      },
+      "filename": "src/lib/actions.ts",
+      "exportedName": "deleteProduct"
+    },
+    "40efffe9ddc041c51b0040977ef505b91177488c45": {
+      "workers": {
+        "app/[locale]/(dashboard)/movements/page": {
+          "moduleId": "[project]/.next-internal/server/app/[locale]/(dashboard)/movements/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": true,
+          "exportedName": "getMovements",
+          "filename": "src/lib/actions.ts"
+        }
+      },
+      "layer": {
+        "app/[locale]/(dashboard)/movements/page": "action-browser"
+      },
+      "filename": "src/lib/actions.ts",
+      "exportedName": "getMovements"
+    }
+  },
+  "edge": {},
+  "encryptionKey": "7wV5dt1Mxc7wiIU6H7Eo7fS6yBwgfRndAhdS7JjoU7o="
+}

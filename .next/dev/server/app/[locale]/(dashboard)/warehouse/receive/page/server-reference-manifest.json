@@ -1,0 +1,50 @@
+{
+  "node": {
+    "007d316d726c2caa5328ba6e3725077b1a231e7e24": {
+      "workers": {
+        "app/[locale]/(dashboard)/warehouse/receive/page": {
+          "moduleId": "[project]/.next-internal/server/app/[locale]/(dashboard)/warehouse/receive/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": true,
+          "exportedName": "getSuppliers",
+          "filename": "src/lib/actions.ts"
+        }
+      },
+      "layer": {
+        "app/[locale]/(dashboard)/warehouse/receive/page": "action-browser"
+      },
+      "exportedName": "getSuppliers",
+      "filename": "src/lib/actions.ts"
+    },
+    "40b1df31ca46dfd2d65ff67223b1e04f154bf947ef": {
+      "workers": {
+        "app/[locale]/(dashboard)/warehouse/receive/page": {
+          "moduleId": "[project]/.next-internal/server/app/[locale]/(dashboard)/warehouse/receive/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": true,
+          "exportedName": "getProducts",
+          "filename": "src/lib/actions.ts"
+        }
+      },
+      "layer": {
+        "app/[locale]/(dashboard)/warehouse/receive/page": "action-browser"
+      },
+      "exportedName": "getProducts",
+      "filename": "src/lib/actions.ts"
+    },
+    "40708d8952e5119d12b929546cca902cfa13ec9e6a": {
+      "workers": {
+        "app/[locale]/(dashboard)/warehouse/receive/page": {
+          "moduleId": "[project]/.next-internal/server/app/[locale]/(dashboard)/warehouse/receive/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": true,
+          "exportedName": "warehouseReceive",
+          "filename": "src/lib/actions.ts"
+        }
+      },
+      "layer": {
+        "app/[locale]/(dashboard)/warehouse/receive/page": "action-browser"
+      },
+      "exportedName": "warehouseReceive",
+      "filename": "src/lib/actions.ts"
+    }
+  },
+  "edge": {}
+}

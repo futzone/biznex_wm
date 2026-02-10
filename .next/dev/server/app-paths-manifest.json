@@ -1,0 +1,9 @@
+{
+  "/[locale]/(dashboard)/movements/page": "app/[locale]/(dashboard)/movements/page.js",
+  "/[locale]/(dashboard)/page": "app/[locale]/(dashboard)/page.js",
+  "/[locale]/(dashboard)/products/page": "app/[locale]/(dashboard)/products/page.js",
+  "/[locale]/(dashboard)/warehouse/page": "app/[locale]/(dashboard)/warehouse/page.js",
+  "/[locale]/(dashboard)/warehouse/receive/page": "app/[locale]/(dashboard)/warehouse/receive/page.js",
+  "/[locale]/(dashboard)/warehouse/returns/page": "app/[locale]/(dashboard)/warehouse/returns/page.js",
+  "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js"
+}

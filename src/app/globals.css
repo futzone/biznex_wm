@@ -1,0 +1,259 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-geist-mono);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --radius-4xl: calc(var(--radius) + 16px);
+}
+
+/* ─── Light Theme (Premium Indigo) ─── */
+:root {
+  --radius: 0.625rem;
+  /* Background: #fafbfc - very light gray */
+  --background: oklch(0.985 0.002 260);
+  /* Foreground: #1e293b - slate-800 for readable dark text */
+  --foreground: oklch(0.279 0.041 260);
+  /* Card: #ffffff - pure white */
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.279 0.041 260);
+  /* Popover: #ffffff */
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.279 0.041 260);
+  /* Primary: #4f46e5 - indigo-600 */
+  --primary: oklch(0.541 0.214 275);
+  /* Primary foreground: white */
+  --primary-foreground: oklch(0.985 0 0);
+  /* Secondary: #eef2ff - indigo-50 light tint */
+  --secondary: oklch(0.962 0.018 275);
+  --secondary-foreground: oklch(0.357 0.135 275);
+  /* Muted: #f1f5f9 - slate-100 soft gray */
+  --muted: oklch(0.968 0.007 260);
+  --muted-foreground: oklch(0.554 0.022 260);
+  /* Accent: #e0e7ff - indigo-100 */
+  --accent: oklch(0.935 0.035 275);
+  --accent-foreground: oklch(0.357 0.135 275);
+  /* Destructive: #ef4444 - warm red */
+  --destructive: oklch(0.577 0.245 27.325);
+  /* Border: #e2e8f0 - very subtle slate-200 */
+  --border: oklch(0.929 0.01 260);
+  /* Input: #e2e8f0 */
+  --input: oklch(0.929 0.01 260);
+  /* Ring: #6366f1 - indigo-500 */
+  --ring: oklch(0.585 0.214 275);
+  /* Charts: indigo/violet/purple palette */
+  --chart-1: oklch(0.541 0.214 275);
+  --chart-2: oklch(0.585 0.214 275);
+  --chart-3: oklch(0.558 0.24 293);
+  --chart-4: oklch(0.714 0.17 295);
+  --chart-5: oklch(0.657 0.2 260);
+  /* Sidebar: white with subtle indigo tint */
+  --sidebar: oklch(0.99 0.005 275);
+  --sidebar-foreground: oklch(0.279 0.041 260);
+  --sidebar-primary: oklch(0.541 0.214 275);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.952 0.024 275);
+  --sidebar-accent-foreground: oklch(0.357 0.135 275);
+  --sidebar-border: oklch(0.929 0.01 260);
+  --sidebar-ring: oklch(0.585 0.214 275);
+}
+
+/* ─── Dark Theme (Deep Navy Indigo) ─── */
+.dark {
+  /* Background: #0f172a - slate-900 deep navy */
+  --background: oklch(0.208 0.042 265);
+  /* Foreground: #f1f5f9 - slate-100 */
+  --foreground: oklch(0.968 0.007 260);
+  /* Card: #1e293b - slate-800 slightly lighter navy */
+  --card: oklch(0.279 0.041 260);
+  --card-foreground: oklch(0.968 0.007 260);
+  /* Popover: #1e293b */
+  --popover: oklch(0.279 0.041 260);
+  --popover-foreground: oklch(0.968 0.007 260);
+  /* Primary: #6366f1 - indigo-500 lighter indigo */
+  --primary: oklch(0.585 0.214 275);
+  --primary-foreground: oklch(0.985 0 0);
+  /* Secondary: #1e293b with indigo tint */
+  --secondary: oklch(0.25 0.035 265);
+  --secondary-foreground: oklch(0.935 0.035 275);
+  /* Muted: #334155 - slate-700 */
+  --muted: oklch(0.352 0.033 260);
+  --muted-foreground: oklch(0.705 0.015 260);
+  /* Accent: dark indigo tint */
+  --accent: oklch(0.3 0.06 275);
+  --accent-foreground: oklch(0.935 0.035 275);
+  /* Destructive: #f87171 - lighter red for dark bg */
+  --destructive: oklch(0.704 0.191 22.216);
+  /* Border: very subtle dark */
+  --border: oklch(1 0 0 / 8%);
+  /* Input */
+  --input: oklch(1 0 0 / 12%);
+  /* Ring */
+  --ring: oklch(0.585 0.214 275);
+  /* Charts: bright indigo/violet/purple for dark mode */
+  --chart-1: oklch(0.585 0.214 275);
+  --chart-2: oklch(0.714 0.17 295);
+  --chart-3: oklch(0.657 0.2 260);
+  --chart-4: oklch(0.747 0.173 320);
+  --chart-5: oklch(0.558 0.24 293);
+  /* Sidebar: dark navy matching background */
+  --sidebar: oklch(0.208 0.042 265);
+  --sidebar-foreground: oklch(0.968 0.007 260);
+  --sidebar-primary: oklch(0.585 0.214 275);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.3 0.06 275);
+  --sidebar-accent-foreground: oklch(0.935 0.035 275);
+  --sidebar-border: oklch(1 0 0 / 8%);
+  --sidebar-ring: oklch(0.585 0.214 275);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* ─── Glassmorphism ─── */
+.glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.dark .glass {
+  background: rgba(15, 23, 42, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* ─── Glow Effects ─── */
+.glow-indigo {
+  box-shadow: 0 0 20px rgba(99, 102, 241, 0.3);
+}
+.glow-indigo-lg {
+  box-shadow: 0 0 40px rgba(99, 102, 241, 0.25), 0 0 80px rgba(99, 102, 241, 0.1);
+}
+
+/* ─── Elevated Card Shadows ─── */
+.card-elevated {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04), 0 6px 24px rgba(0, 0, 0, 0.04);
+}
+.dark .card-elevated {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2), 0 6px 24px rgba(0, 0, 0, 0.2);
+}
+.card-elevated-hover {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04), 0 6px 24px rgba(0, 0, 0, 0.04);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+.card-elevated-hover:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06), 0 12px 36px rgba(0, 0, 0, 0.06);
+  transform: translateY(-1px);
+}
+.dark .card-elevated-hover {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2), 0 6px 24px rgba(0, 0, 0, 0.2);
+}
+.dark .card-elevated-hover:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3), 0 12px 36px rgba(0, 0, 0, 0.3);
+}
+
+/* ─── Subtle Animations ─── */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-in {
+  animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeInScale {
+  from { opacity: 0; transform: scale(0.96); }
+  to { opacity: 1; transform: scale(1); }
+}
+.animate-in-scale {
+  animation: fadeInScale 0.25s ease-out;
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+.animate-shimmer {
+  background: linear-gradient(90deg, transparent 25%, rgba(99, 102, 241, 0.08) 50%, transparent 75%);
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite;
+}
+
+/* ─── Button Glow on Hover ─── */
+.btn-glow {
+  transition: box-shadow 0.3s ease, transform 0.15s ease;
+}
+.btn-glow:hover {
+  box-shadow: 0 0 20px rgba(99, 102, 241, 0.35);
+}
+.btn-glow:active {
+  transform: scale(0.98);
+}
+
+/* ─── Data Table Minimal ─── */
+.table-minimal th {
+  border-bottom: 1px solid var(--border);
+  font-weight: 500;
+  font-size: 0.8125rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.table-minimal td {
+  border-bottom: 1px solid var(--border);
+}
+.table-minimal tr:last-child td {
+  border-bottom: none;
+}
+
+/* ─── Smooth Global Transitions ─── */
+@layer base {
+  body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+}

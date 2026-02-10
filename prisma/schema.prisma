@@ -1,0 +1,120 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+enum Role {
+  ADMIN
+  WAREHOUSE_MANAGER
+  DEALER
+}
+
+enum MovementType {
+  RECEIVE
+  SEND
+  RETURN
+}
+
+enum LocationType {
+  WAREHOUSE
+  DEALER
+}
+
+model User {
+  id             String          @id @default(cuid())
+  name           String
+  login          String          @unique
+  password       String
+  role           Role            @default(DEALER)
+  phone          String?
+  dealerId       String?
+  dealer         Dealer?         @relation(fields: [dealerId], references: [id])
+  stockMovements StockMovement[]
+  createdAt      DateTime        @default(now())
+  updatedAt      DateTime        @updatedAt
+}
+
+model Supplier {
+  id             String          @id @default(cuid())
+  name           String
+  contactPerson  String?
+  phone          String?
+  address        String?
+  stockMovements StockMovement[]
+  createdAt      DateTime        @default(now())
+  updatedAt      DateTime        @updatedAt
+}
+
+model Dealer {
+  id             String          @id @default(cuid())
+  name           String
+  contactPerson  String?
+  phone          String?
+  address        String?
+  region         String?
+  users          User[]
+  stocks         Stock[]
+  stockMovements StockMovement[]
+  clients        Client[]
+  createdAt      DateTime        @default(now())
+  updatedAt      DateTime        @updatedAt
+}
+
+model Client {
+  id           String   @id @default(cuid())
+  name         String
+  businessName String?
+  phone        String?
+  address      String?
+  dealerId     String
+  dealer       Dealer   @relation(fields: [dealerId], references: [id])
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
+
+model Product {
+  id          String          @id @default(cuid())
+  category    String
+  name        String
+  description String?
+  minStock    Int             @default(0)
+  stocks      Stock[]
+  movements   StockMovement[]
+  createdAt   DateTime        @default(now())
+  updatedAt   DateTime        @updatedAt
+}
+
+model Stock {
+  id           String       @id @default(cuid())
+  productId    String
+  product      Product      @relation(fields: [productId], references: [id])
+  locationType LocationType
+  locationId   String?
+  dealer       Dealer?      @relation(fields: [locationId], references: [id])
+  quantity     Int          @default(0)
+  updatedAt    DateTime     @updatedAt
+
+  @@unique([productId, locationType, locationId])
+}
+
+model StockMovement {
+  id            String       @id @default(cuid())
+  productId     String
+  product       Product      @relation(fields: [productId], references: [id])
+  type          MovementType
+  quantity      Int
+  dealerId      String?
+  dealer        Dealer?      @relation(fields: [dealerId], references: [id])
+  supplierId    String?
+  supplier      Supplier?    @relation(fields: [supplierId], references: [id])
+  performedById String
+  performedBy   User         @relation(fields: [performedById], references: [id])
+  clientName    String?
+  clientPhone   String?
+  clientAddress String?
+  note          String?
+  createdAt     DateTime     @default(now())
+}

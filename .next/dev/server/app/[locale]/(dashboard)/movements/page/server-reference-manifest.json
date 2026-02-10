@@ -1,0 +1,35 @@
+{
+  "node": {
+    "40efffe9ddc041c51b0040977ef505b91177488c45": {
+      "workers": {
+        "app/[locale]/(dashboard)/movements/page": {
+          "moduleId": "[project]/.next-internal/server/app/[locale]/(dashboard)/movements/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": true,
+          "exportedName": "getMovements",
+          "filename": "src/lib/actions.ts"
+        }
+      },
+      "layer": {
+        "app/[locale]/(dashboard)/movements/page": "action-browser"
+      },
+      "exportedName": "getMovements",
+      "filename": "src/lib/actions.ts"
+    },
+    "005e4ddb3dd2bdb7c66e01527f36923bcdac13075a": {
+      "workers": {
+        "app/[locale]/(dashboard)/movements/page": {
+          "moduleId": "[project]/.next-internal/server/app/[locale]/(dashboard)/movements/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/lib/actions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": true,
+          "exportedName": "getDealers",
+          "filename": "src/lib/actions.ts"
+        }
+      },
+      "layer": {
+        "app/[locale]/(dashboard)/movements/page": "action-browser"
+      },
+      "exportedName": "getDealers",
+      "filename": "src/lib/actions.ts"
+    }
+  },
+  "edge": {}
+}
